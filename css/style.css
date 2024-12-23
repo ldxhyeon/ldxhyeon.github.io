@@ -1341,13 +1341,14 @@ footer .credits a {
 }
 
 .profile-img > img {
-  width: 250x;
-  height: 250px;
+  max-width: 60%; /* 부모 요소의 너비를 넘지 않음 */
+  height: auto; /* 비율 유지 */
   border-radius: 50%;
-  border:1px solid #333;
+  border: 1px solid #fff;
 }
 
 .about-me {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1368,6 +1369,11 @@ footer .credits a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.about-info {
+  width: 100%;
 }
 
 
@@ -1412,5 +1418,54 @@ a:hover {
 }
 
 
-/* 수정 */
+/* 모바일 반응형 스타일 */
+@media (max-width: 768px) { 
+  /* 헤딩 및 본문 폰트 크기 조정 */
+  .introduction-box1 h2 {
+    font-size: 1.2rem; /* 헤딩 크기 줄임 */
+  }
+
+  .introduction-box1 p {
+    font-size: 0.9rem; /* 본문 글자 크기 줄임 */
+  }
+
+  /* 테이블 폰트 크기 및 패딩 조정 */
+  .info-table td {
+    font-size: 14px; /* 더 작은 글자 크기 */
+    padding: 5px 10px; /* 여백 줄임 */
+  }
+
+  /* 테이블의 제목 열 */
+  .info-table .title-s {
+    font-size: 14px; /* 제목도 크기 축소 */
+    width: 35%; /* 제목 열 비율 조정 */
+  }
+
+  /* 이미지 크기 줄이기 */
+  .profile-img > img {
+    width: 120px; /* 모바일에서 작은 크기로 */
+    height: auto;
+  }
+
+  /* 레이아웃 전체 폭 조정 */
+  .row-sub-box {
+    width: 100%; /* 폭을 100%로 확장 */
+    flex-direction: column; /* 세로로 정렬 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+  }
+
+  /* 이름 박스 가운데 정렬 */
+  .name-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* 서비스 섹션 여백 줄이기 */
+  #service {
+    margin-top: 3rem;
+  }
+}
+
+
+
 
