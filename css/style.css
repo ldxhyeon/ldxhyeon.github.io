@@ -158,9 +158,9 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 140px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #C5C5C5;
   margin: 0 auto;
 }
 
@@ -628,7 +628,7 @@ a:hover {
 .intro .intro-title {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .intro .intro-subtitle {
@@ -711,6 +711,7 @@ a:hover {
 ======================================*/
 
 .service-box {
+  width: 70%;
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -725,9 +726,10 @@ a:hover {
 }
 
 .service-box .service-ico {
-  margin-bottom: 1rem;
   color: #1e1e1e;
 }
+
+
 
 .service-box .ico-circle {
   transition: all 500ms ease;
@@ -1221,7 +1223,7 @@ footer .credits a {
   }
 
   .intro .intro-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
   .intro .intro-subtitle {
@@ -1275,6 +1277,8 @@ footer .credits a {
 
 
 /* rowprofile */
+/* 기존 코드 유지 */
+/* rowprofile */
 #rowProfile {
   flex-direction: column;
   align-items: center;
@@ -1313,7 +1317,6 @@ footer .credits a {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
 #photoBox {
   width: 100%;
   height: 100%;
@@ -1341,7 +1344,7 @@ footer .credits a {
 }
 
 .profile-img > img {
-  max-width: 60%; /* 부모 요소의 너비를 넘지 않음 */
+  max-width: 70%; /* 부모 요소의 너비를 넘지 않음 */
   height: auto; /* 비율 유지 */
   border-radius: 50%;
   border: 1px solid #fff;
@@ -1371,11 +1374,9 @@ footer .credits a {
   justify-content: center;
 }
 
-
 .about-info {
   width: 100%;
 }
-
 
 .info-table {
   width: 100%;
@@ -1418,9 +1419,21 @@ a:hover {
 }
 
 
+.tech-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.skills-box {
+  margin-bottom: 3rem;
+}
+
+
+
 /* 모바일 반응형 스타일 */
-@media (max-width: 768px) { 
-  /* 헤딩 및 본문 폰트 크기 조정 */
+@media (max-width: 768px) {
   .introduction-box1 h2 {
     font-size: 1.2rem; /* 헤딩 크기 줄임 */
   }
@@ -1429,42 +1442,74 @@ a:hover {
     font-size: 0.9rem; /* 본문 글자 크기 줄임 */
   }
 
-  /* 테이블 폰트 크기 및 패딩 조정 */
   .info-table td {
     font-size: 14px; /* 더 작은 글자 크기 */
     padding: 5px 10px; /* 여백 줄임 */
   }
 
-  /* 테이블의 제목 열 */
   .info-table .title-s {
     font-size: 14px; /* 제목도 크기 축소 */
     width: 35%; /* 제목 열 비율 조정 */
   }
 
-  /* 이미지 크기 줄이기 */
   .profile-img > img {
     width: 120px; /* 모바일에서 작은 크기로 */
     height: auto;
   }
 
-  /* 레이아웃 전체 폭 조정 */
   .row-sub-box {
     width: 100%; /* 폭을 100%로 확장 */
     flex-direction: column; /* 세로로 정렬 */
     align-items: flex-start; /* 왼쪽 정렬 */
   }
 
-  /* 이름 박스 가운데 정렬 */
   .name-box {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  /* 서비스 섹션 여백 줄이기 */
   #service {
     margin-top: 3rem;
   }
 }
+
+/* 아이패드 및 중간 화면 크기 대응 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .introduction-box1 h2 {
+    font-size: 1.4rem; /* 헤딩 크기를 조금 축소 */
+  }
+
+  .introduction-box1 p {
+    font-size: 0.95rem; /* 본문 크기 조정 */
+  }
+
+  .info-table td {
+    font-size: 14px; /* 테이블 글자 크기 조정 */
+    padding: 8px 12px; /* 여백 최적화 */
+  }
+
+  .info-table .title-s {
+    font-size: 16px; /* 테이블 제목 글자 크기 조정 */
+  }
+
+  .profile-img > img {
+    width: 180px; /* 이미지 크기를 중간 크기로 조정 */
+    height: auto;
+  }
+
+  .row-sub-box {
+    width: 90%; /* 아이패드 화면에서 폭을 약간 확장 */
+  }
+
+  .name-box {
+    margin-bottom: 15px; /* 이름과 아래 콘텐츠 간격 조정 */
+  }
+
+  #service {
+    margin-top: 4rem;
+  }
+}
+
 
 
 
