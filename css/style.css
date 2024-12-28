@@ -90,7 +90,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #232323;
 }
 
 .overlay-mf {
@@ -100,12 +100,12 @@ a:hover {
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .7;
+  margin-top: 4rem;
 }
 
 .paralax-mf {
   position: relative;
-  padding: 8rem 0;
+  padding: 11rem 0;
 }
 
 .display-table {
@@ -263,7 +263,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  /* box-shadow: 0 0 0 5px #0078ff; */
   display: block;
 }
 
@@ -271,7 +271,7 @@ a:hover {
 
 .owl-theme .owl-dots {
   text-align: center;
-  margin-top: 18px;
+  margin-top: 4rem;
 }
 
 .owl-theme .owl-dots .owl-dot {
@@ -294,7 +294,7 @@ a:hover {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #1B1B1B;
+  background-color: #ff5c54;
   width: 25px;
 }
 
@@ -711,7 +711,7 @@ a:hover {
 ======================================*/
 
 .service-box {
-  width: 70%;
+  width: 75%;
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -721,9 +721,9 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* 부드러운 어두운 그림자 */
 }
+
 
 .service-box .service-ico {
   color: #1e1e1e;
@@ -855,7 +855,7 @@ a:hover {
   font-weight: 600;
   margin: 1rem 0;
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .testimonial-box .comit {
@@ -1066,12 +1066,12 @@ a:hover {
 ======================================*/
 
 .footer-paralax {
-  padding: 4rem 0 0 0;
+  padding: 0;
 }
 
-.contact-mf {
+/* .contact-mf {
   margin-top: 4rem;
-}
+} */
 
 /*======================================
 //--//-->   FOOTER
@@ -1430,6 +1430,147 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.front-back-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
+  justify-content: flex-start; /* 중앙 정렬 */
+}
+
+.front-back-skill {
+  width: 21%;
+  margin: 1rem 1rem 1rem 0; /* 아이템 간 간격 */
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 70%;
+  height: auto;
+}
+
+.edu-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-sub-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 60px; 
+  border-radius: 10px;
+  background-color: #b1d6ff;
+}
+
+.content-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.edu-text {
+  width: 25%;
+  text-align: left;
+}
+
+.edu-text li {
+  margin: 10px;
+  color: #a6a6a6;
+  font-size: 20px;
+}
+
+.edu-icon-group {
+  display: flex;
+  align-items: center; /* 왼쪽 정렬 */
+  flex-direction: column; /* 세로로 정렬 */
+  margin-top: 5rem;
+}
+
+.edu-icon-left {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.edu-icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.edu-icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #787878; /* 박스 배경색 */
+  border-radius: 12px; /* 둥근 모서리 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.edu-icon-box img {
+  width: 40px;
+  height: 40px;
+}
+
+
+/* contact */
+.contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid #0062d3;
+}
+
+.contact-info-box {
+  margin-top: 2rem;
+}
+
+
+.contact-item-main-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+.contact-item {
+  width: 30%;
+  border: 1px solid #fff;
+  margin: 20px;
+}
+
+
+
 
 
 /* 모바일 반응형 스타일 */
@@ -1471,6 +1612,48 @@ a:hover {
   #service {
     margin-top: 3rem;
   }
+
+  .front-back-box {
+    flex-direction: column; /* 세로 방향 정렬 */
+    align-items: center; /* 아이템을 가운데 정렬 */
+  }
+
+  .front-back-skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* 모바일에서 각 스킬 박스를 더 넓게 */
+    margin-bottom: 1rem; /* 각 박스 간 간격 추가 */
+  }
+
+  .skill-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-sub-box {
+    width: 60%;
+  }
+
+  .content-test {
+    width: 100%;
+  }
+
+  .edu-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .edu-text li {
+    width: 60%;
+    font-size: 16px;
+  }
+  
 }
 
 /* 아이패드 및 중간 화면 크기 대응 */
@@ -1507,6 +1690,15 @@ a:hover {
 
   #service {
     margin-top: 4rem;
+  }
+
+  .front-back-box {
+    justify-content: left; /* 중앙 정렬 */
+  }
+
+  .front-back-skill {
+    width: 40%; /* 중간 화면에서 2개씩 배치 */
+    margin: 1rem 1rem 1rem 0;
   }
 }
 
