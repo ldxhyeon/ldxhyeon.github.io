@@ -1785,6 +1785,12 @@ p {
   margin: 15px;
 }
 
+.feature-list-tech li {
+  background-color: #fff389; 
+  text-align: center;
+  padding: 10px;
+}
+
 
 /* 갤러리 섹션 */
 .image-gallery {
@@ -1848,6 +1854,7 @@ p {
   max-height: 90%;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  object-fit: contain; /* 이미지 비율 유지하면서 전체를 보이게 */
 }
 
 
@@ -2090,6 +2097,11 @@ body.modal-open {
     width: 30px; /* 닫기 버튼 크기 축소 */
     height: 30px;
     font-size: 1.2rem; /* 아이콘 크기 축소 */
+  }
+
+  .image-modal img {
+    max-width: 90%; /* 모바일 화면에서는 더 크게 */
+    height: 250px;
   }
 
 }
