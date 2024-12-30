@@ -1694,7 +1694,7 @@ a:hover {
 
 h3 {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 24px;
   color: #333; /* 짙은 회색 */
 }
 
@@ -1836,6 +1836,10 @@ p {
   }
 
 
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서는 한 줄에 2개 */
+  }
+
 }
 
 /* 아이패드 및 중간 화면 크기 대응 */
@@ -1939,25 +1943,135 @@ p {
   margin: 2rem;
 }
 
+.final-header {
+  background-color: #5F7D72;
+  padding: 10px;
+}
+
 .modal-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #e50914;
+  color: #fff;
+}
+
+.modal-duration {
+  color: #fff; 
+  font-size: 18px;
 }
 
 .modal-image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.feature-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+
 }
 
 .feature-list {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 10px;
   text-align: left;
 }
 
+.feature-list li {
+  margin: 15px;
+}
+
+
+/* 갤러리 섹션 */
+.image-gallery {
+  margin-top: 30px;
+}
+
+.gallery-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 한 줄에 4개의 이미지 */
+  gap: 20px; /* 이미지 간 간격 */
+}
+
+.gallery-grid img {
+  width: 100%; /* 셀 크기 안에서 이미지를 맞춤 */
+  height: 200px; /* 세로 크기 고정 */
+  object-fit: cover; /* 이미지가 셀 크기에 맞게 잘림 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05); /* 호버 시 확대 효과 */
+}
+
+/* 이미지 보기 모달 */
+.image-modal {
+  display: none; /* 처음에 숨김 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal img {
+  max-width: 60%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 이미지 모달 닫기 버튼 */
+.close-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 65px;
+  display: flex; /* 중앙 정렬 */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* 버튼 크기 */
+  height: 40px; /* 버튼 크기 */
+  font-size: 1.5rem; /* '×' 아이콘 크기 */
+  color: white;
+  cursor: pointer;
+  background: #525252;
+  border-radius: 50%; /* 완전한 원형 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
+  z-index: 1001;
+  transition: background-color 0.3s ease; /* 호버 효과 부드럽게 */
+  padding-bottom: 5px;
+}
+
+.close-modal-btn:hover {
+  background: #3a3a3a; /* 호버 시 어두운 배경색 */
+}
+
+
+
+/* 상세보기 닫기 버튼 */
 /* 닫기 버튼 */
 .close-btn-container {
   position: absolute;
@@ -1981,7 +2095,7 @@ p {
   border-radius: 50%; /* 완전한 원형 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
   transition: background-color 0.3s ease; /* 호버 효과 부드럽게 */
-  padding-bottom: 3px;
+  padding-bottom: 5px;
 }
 
 .close-btn:hover {
