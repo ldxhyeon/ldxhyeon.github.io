@@ -1698,10 +1698,10 @@ h3 {
   color: #333; /* 짙은 회색 */
 }
 
-p {
+.project-modal-content > p {
   margin: 0;
   font-size: 14px;
-  color: #666; /* 중간 회색 */
+  color: #000000; /* 중간 회색 */
 }
 
 
@@ -1741,6 +1741,11 @@ p {
 
 .final-header {
   background-color: #5F7D72;
+  padding: 10px;
+}
+
+.semi-header {
+  background-color: #F5E6CC;
   padding: 10px;
 }
 
@@ -1831,7 +1836,7 @@ p {
 .gallery-caption {
   margin-top: 10px;
   font-size: 1rem;
-  color: #b4b4b4;
+  color: #030303;
 }
 
 
@@ -1855,6 +1860,7 @@ p {
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   object-fit: contain; /* 이미지 비율 유지하면서 전체를 보이게 */
+  margin-right: 13px;
 }
 
 
@@ -2102,6 +2108,7 @@ body.modal-open {
   .image-modal img {
     max-width: 90%; /* 모바일 화면에서는 더 크게 */
     height: 250px;
+    margin: 0;
   }
 
 }
