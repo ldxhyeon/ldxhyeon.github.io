@@ -15,7 +15,7 @@ const projects = [
     images: [
       { src: "img/chatbot.PNG", caption: "챗봇 API" },
       { src: "img/upcommingList.png", caption: "예정 경매 리스트" },
-      { src: "img/upcomming.PNG", caption: "예정 경매 상세 페이지" },
+      { src: "img/upcomming.png", caption: "예정 경매 상세 페이지" },
       { src: "img/report.PNG", caption: "신고 팝업창" },
       { src: "img/currentList.PNG", caption: "현재 경매 리스트" },
       { src: "img/current.PNG", caption: "현재 경매 상세 리스트" },
