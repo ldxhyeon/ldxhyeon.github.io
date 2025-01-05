@@ -1571,7 +1571,7 @@ a:hover {
 
 /* 프로젝트 내용 */
 .project-content {
-  padding: 45px;
+  padding: 45px 45px 10px 45px;
   text-align: center;
 }
 
@@ -1583,6 +1583,27 @@ a:hover {
 .project-content p {
   font-size: 1rem;
   color: #aaa;
+}
+
+/* 키워드 섹션 */
+.project-keywords {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 키워드 간 간격 */
+  margin: 10px; /* 위 요소와 간격 */
+}
+
+.keyword {
+  display: inline-block;
+  padding: 5px 10px; /* 키워드 내부 여백 */
+  background-color: #232323; /* 배경 색 */
+  color: #fff; /* 텍스트 색 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  font-size: 14px; /* 글꼴 크기 */
+  font-weight: 500; /* 글꼴 두께 */
+  cursor: default; /* 마우스 커서 */
+  text-align: center;
 }
 
 /* 오버레이 */

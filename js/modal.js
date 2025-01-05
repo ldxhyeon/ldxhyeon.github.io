@@ -208,6 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
           // Repet에 맞는 이미지로 변경
           modalImage.src = "img/repet-main3.png"; // Repet 프로젝트의 이미지 경로로 변경
+          
         } else {
           header.classList.remove("semi-header"); // Repet 스타일 제거
           modalTitle.style.color = "#fff";
