@@ -1632,6 +1632,39 @@ a:hover {
   color: #232323;
 }
 
+/* 프로젝트 사용 기술 */
+.mini-card {
+  width: 300px; /* 카드 너비 */
+  padding: 20px;
+  background-color: #333; /* 카드 배경색 */
+  color: #fff; /* 텍스트 색상 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  margin: 10px auto; /* 중앙 정렬 및 여백 */
+  text-align: left;
+}
+
+.mini-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffc107; /* 강조 색상 */
+}
+
+.mini-card ul {
+  list-style-type: none; /* 목록 스타일 제거 */
+  padding: 0;
+}
+
+.mini-card li {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.mini-card li strong {
+  color: #ffc107; /* 항목 강조 */
+}
+
+
 
 
 
@@ -1800,9 +1833,13 @@ h3 {
 }
 
 .feature-list-tech li {
-  background-color: #fff389; 
-  text-align: center;
+  background-color: #EFEFF1; 
   padding: 10px;
+}
+
+.tech-category {
+  display: inline-block;
+  width: 120px;
 }
 
 
@@ -1935,6 +1972,8 @@ h3 {
 body.modal-open {
   overflow: hidden; /* 스크롤 비활성화 */
 }
+
+
 
 
 /* 모바일 반응형 스타일 */

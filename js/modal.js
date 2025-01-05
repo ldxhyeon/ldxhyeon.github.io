@@ -11,7 +11,16 @@ const projects = [
       "웹소켓을 활용한 경매 실시간 입찰",
       "ajax를 활용한 리스트 조회 / 페이지네이션",
     ],
-    technologies: ["HTML5, CSS3", "JavaScript, Jquery", "Java, Lombok", "Spring Boot", "Mybatis", "Oracle"],
+    technologies: [
+      { category: "Language", value: "Java 17" },
+      { category: "Framework", value: "Spring Boot / Maven / MyBatis / Spring Security / Bootstrap" },
+      { category: "Database", value: "MySql 8.0.26" },
+      { category: "Cloud", value: "OCI" },
+      { category: "Server/WAS", value: "Apache Tomcat 10 / Nginx" },
+      { category: "CI/CD", value: "Jenkins" },
+      { category: "Tools", value: "HeidiSQL / IntelliJ / GitHub / DBeaver / ERDCloud / Slack / STS" },
+      { category: "API", value: "카카오결제 / 다음주소" },
+    ],
     images: [
       { src: "img/chatbot.PNG", caption: "챗봇 API" },
       { src: "img/upcommingList.png", caption: "예정 경매 리스트" },
@@ -34,7 +43,16 @@ const projects = [
       "비밀번호 유효성 검사 후 회원탈퇴 진행",
       "관리자 페이지 게시물 삭제",
     ],
-    technologies: ["HTML5, CSS3", "JavaScript", "Java, Lombok", "Spring Boot", "Mybatis", "Oracle"],
+    technologies: [
+      { category: "Language", value: "Java 17" },
+      { category: "Framework", value: "Spring Boot / Maven / MyBatis / Spring Security / Bootstrap" },
+      { category: "Database", value: "MySql 8.0.26" },
+      { category: "Cloud", value: "OCI" },
+      { category: "Server/WAS", value: "Apache Tomcat 10 / Nginx" },
+      { category: "CI/CD", value: "Jenkins" },
+      { category: "Tools", value: "HeidiSQL / IntelliJ / GitHub / DBeaver / ERDCloud / Slack / STS" },
+      { category: "API", value: "카카오결제 / 다음주소" },
+    ],
     images: [
       { src: "img/mypageUpdate.png", caption: "프로필 수정 모달창" },
       { src: "img/mypagePost.png", caption: "회원 게시글 관리 모달창" },
@@ -44,6 +62,7 @@ const projects = [
     ],
   },
 ];
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("project-modal");
@@ -86,7 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
         technologyList.innerHTML = "";
         project.technologies.forEach((tech) => {
           const li = document.createElement("li");
-          li.textContent = tech;
+          li.innerHTML = `
+            <span class="tech-category">${tech.category}</span> 
+            <span class="highlight">${tech.value}</span>
+          `;
           technologyList.appendChild(li);
         });
   
@@ -105,22 +127,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // Repet 프로젝트인지 확인하고 헤더 클래스 변경
         const header = document.querySelector(".final-header");
         const modalImage = document.querySelector(".modal-image");
-
+  
         if (projectId === "project2") {
           header.classList.add("semi-header"); // Repet 스타일 추가
-          modalTitle.style.color = "#232323"; 
-          modalDuration.style.color = "#232323";  
-
+          modalTitle.style.color = "#232323";
+          modalDuration.style.color = "#232323";
+  
           // Repet에 맞는 이미지로 변경
           modalImage.src = "img/repet-main3.png"; // Repet 프로젝트의 이미지 경로로 변경
-
         } else {
           header.classList.remove("semi-header"); // Repet 스타일 제거
-          modalTitle.style.color = "#fff"; 
-          modalDuration.style.color = "#fff"; 
-
-          // Repet에 맞는 이미지로 변경
-          modalImage.src = "img/final-main.PNG"; // Repet 프로젝트의 이미지 경로로 변경
+          modalTitle.style.color = "#fff";
+          modalDuration.style.color = "#fff";
+  
+          // 기본 이미지로 변경
+          modalImage.src = "img/final-main.PNG";
         }
   
         // 모달 열기
@@ -140,17 +161,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-
   closeModalBtn.addEventListener("click", () => {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
   });
-
+  
   closeImageModalBtn.addEventListener("click", () => {
     imageModal.style.display = "none";
     closeModalBtn.style.display = "block"; // 프로젝트 모달 닫기 버튼 다시 표시
   });
-
+  
   window.addEventListener("click", (event) => {
     if (event.target === imageModal) {
       imageModal.style.display = "none";
@@ -160,6 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove("modal-open");
     }
   });
+  
 });
 
 
