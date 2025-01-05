@@ -1665,9 +1665,6 @@ a:hover {
 }
 
 
-
-
-
 /* contact */
 .contact-main {
   display: flex;
@@ -1751,6 +1748,7 @@ h3 {
 
 
 
+
 /* 프로젝트 모달 */
 /* 모달 스타일 */
 /* 모달 배경 */
@@ -1764,6 +1762,7 @@ h3 {
   height: 100%;
   background: rgba(0, 0, 0, 0.8); /* 검정색 배경 + 투명도 */
   justify-content: center;
+  /* display: flex; */
   align-items: start; /* 상단에서부터 정렬 */
   overflow-y: auto; /* 바깥 스크롤 활성화 */
   padding: 20px; /* 모달과 화면 위쪽 간격 */
@@ -1842,10 +1841,14 @@ h3 {
   width: 120px;
 }
 
+.trouble-title {
+  font-size: 18px;
+}
+
 
 /* 갤러리 섹션 */
 .image-gallery {
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .gallery-title {
