@@ -1952,7 +1952,7 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
   z-index: 1001;
   transition: background-color 0.3s ease; /* 호버 효과 부드럽게 */
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .close-modal-btn:hover {
@@ -1985,7 +1985,7 @@ h3 {
   border-radius: 50%; /* 완전한 원형 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
   transition: background-color 0.3s ease; /* 호버 효과 부드럽게 */
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 
 .close-btn:hover {
@@ -2175,6 +2175,7 @@ body.modal-open {
     width: 30px; /* 닫기 버튼 크기 축소 */
     height: 30px;
     font-size: 1.2rem; /* 아이콘 크기 축소 */
+    padding: 0;
   }
 
   .image-modal img {
