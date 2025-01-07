@@ -1999,6 +1999,7 @@ body.modal-open {
 
 
 
+/* 미디어 설정 */
 
 /* 모바일 반응형 스타일 */
 @media (max-width: 768px) {
@@ -2185,6 +2186,7 @@ body.modal-open {
   }
 
 }
+
 
 /* 아이패드 및 중간 화면 크기 대응 */
 @media (min-width: 768px) and (max-width: 1024px) {
